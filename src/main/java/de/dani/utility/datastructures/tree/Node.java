@@ -3,39 +3,39 @@ package de.dani.utility.datastructures.tree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Node <T>{
-	private T t;
-	private List<Node<T>> childNodes;
+public class Node {
+	private Object dt;
+	private List<Node> childNodes;
 	
 	public Node(){
-		childNodes = new ArrayList<Node<T>>();	
+		childNodes = new ArrayList<Node>();	
 	}
 	
-	public Node(T t){
-		this.t = t;
-		childNodes = new ArrayList<Node<T>>();	
+	public Node(Object dt){
+		this.dt = dt;
+		childNodes = new ArrayList<Node>();	
 	}
 	
-	public T getData() {
-		return t;
+	public Object getData() {
+		return dt;
 	}
-	public void setData(T t) {
-		this.t = t;
+	public void setData(Object dt) {
+		this.dt = dt;
 	}
-	public List<Node<T>> getChildNodes() {
+	public List<Node> getChildNodes() {
 		return childNodes;
 	}
-	public void setChildNodes(List<Node<T>> childNodes) {
+	public void setChildNodes(List<Node> childNodes) {
 		this.childNodes = childNodes;
 	}
 	
-	public void addChild(Node<T> node){
+	public void addChild(Node node){
 		childNodes.add(node);
 	}
 
 	@Override
 	public String toString() {
-		return t.toString();
+		return dt.toString();
 	}
 	
 	public int size(){
@@ -46,7 +46,7 @@ public class Node <T>{
 		return !(childNodes.size() > 0);
 	}
 	
-	public Node<T> getChild(int i){
+	public Node getChild(int i){
 		return childNodes.get(i);
 	}
 	
@@ -54,12 +54,12 @@ public class Node <T>{
 		for(int i = 0; i < n; i++){
 			System.out.print("  ");
 		}
-		if(t!=null)
-		System.out.println(t.toString());
+		if(dt!=null)
+		System.out.println(dt.toString());
 		else
 		System.out.println("a");
 		if(childNodes.size() > 0){
-			for(Node<T> node : childNodes){
+			for(Node node : childNodes){
 				node.print(n+1);
 			}
 		}

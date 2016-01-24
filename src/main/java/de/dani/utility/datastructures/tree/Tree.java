@@ -1,8 +1,8 @@
 package de.dani.utility.datastructures.tree;
 
-public class Tree<T> extends Node<T>{
-	public Tree(T t){
-		super(t);
+public class Tree extends Node{
+	public Tree(Object dt){
+		super(dt);
 	}
 	
 	public Tree(){}
