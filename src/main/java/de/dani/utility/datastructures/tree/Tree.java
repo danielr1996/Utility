@@ -6,11 +6,6 @@ public class Tree extends Node{
 	}
 	
 	public Tree(){}
-	
-	@Override
-	public String toString() {
-		return "Arbeitsagentur";
-	}
 
 	public void print() {
 		super.print(0);

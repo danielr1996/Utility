@@ -1,0 +1,16 @@
+{
+	"langs": [
+	{"de": [
+			{"hello": "Hallo"}
+	]},
+	{"fr": [
+			{"hello": "bonjour"}
+	]},
+	{"es": [
+			{"hello": "ola"}
+	]},
+	{"it": [
+			{"hello": "ciao"}
+	]},
+	]
+}
