@@ -26,7 +26,7 @@ public class MainFrame implements ItemListener {
 
 	private void init() {
 		ph = PropertyHandler.getHandler("res/config.properties");
-		frame = new JFrame();
+		frame = new JFrame("L10N Demo");
 		l10n = new Localization(ph.get("lang"));
 		lbl = new JLabel(l10n.get("hello"));
 		box = new JComboBox<String>(new String[] { "de", "en", "fr", "it", "es" });
