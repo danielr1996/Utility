@@ -2,7 +2,7 @@ package de.dani.utility.swing;
 
 import javax.swing.JOptionPane;
 
-class InputDialog {
+public class InputDialog {
 	public static String showStringDialog(String msg) {
 		String s = JOptionPane.showInputDialog(msg);
 		if (s.equals("") || s == null) {
